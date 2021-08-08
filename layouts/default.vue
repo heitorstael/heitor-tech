@@ -6,18 +6,18 @@
     <Nuxt />
     <footer>
       <address>
-        <a href="https://twitter.com/heitorstael" target="_blank"
-          ><fa-icon :icon="['fab', 'twitter']" size="lg"
-        /></a>
-        <a href="https://instagram.com/heitorstael" target="_blank"
-          ><fa-icon :icon="['fab', 'instagram']" size="lg"
-        /></a>
-        <a href="https://github.com/heitorstael" target="_blank"
-          ><fa-icon :icon="['fab', 'github']" size="lg"
-        /></a>
-        <a href="https://linkedin.com/in/heitorstael/" target="_blank"
-          ><fa-icon :icon="['fab', 'linkedin-in']" size="lg"
-        /></a>
+        <a href="https://twitter.com/heitorstael" target="_blank">
+          <fa-icon :icon="['fab', 'twitter']" size="lg" />
+        </a>
+        <a href="https://instagram.com/heitorstael" target="_blank">
+          <fa-icon :icon="['fab', 'instagram']" size="lg" />
+        </a>
+        <a href="https://github.com/heitorstael" target="_blank">
+          <fa-icon :icon="['fab', 'github']" size="lg" />
+        </a>
+        <a href="https://linkedin.com/in/heitorstael/" target="_blank">
+          <fa-icon :icon="['fab', 'linkedin-in']" size="lg" />
+        </a>
       </address>
       <p>
         &#169; {{ new Date().getFullYear() }} Heitor Stael. Built using NuxtJS.
