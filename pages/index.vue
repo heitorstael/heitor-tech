@@ -6,12 +6,13 @@
 </template>
 
 <script>
-import ProgrammerIllustration from '~/components/home/ProgrammerIllustration'
+  import ProgrammerIllustration from '~/components/home/ProgrammerIllustration';
 
-export default {
-  name: 'Home',
-  components: {
-    ProgrammerIllustration
-  }
-}
+  export default {
+    name: 'Home',
+    components: {
+      ProgrammerIllustration,
+    },
+    layout: ({ isMobile }) => (isMobile ? 'mobile' : 'default'),
+  };
 </script>
