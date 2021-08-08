@@ -1,15 +1,17 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'heitor-tech',
+    title: 'heitor.tech',
     htmlAttrs: {
       lang: 'en'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: "Heitor's personal website." },
-      { name: 'format-detection', content: 'telephone=no' }
+      { hid: 'description', name: 'description', content: "Heitors personal website." },
+      { name: 'format-detection', content: 'telephone=no' },
+      { name: 'author', content: 'Heitor Stael' },
+      { name: 'keywords', content: 'HTML, CSS, JavaScript, Web Development, Developer, Landing Page, NuxtJS, VueJS, Vue, Heitor, Stael, Full Stack, heitor tech' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -42,6 +44,11 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
   ],
+
+  // router config
+  router: {
+    middleware: 'mobile'
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
