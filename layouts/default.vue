@@ -1,7 +1,9 @@
 <template>
-  <section>
+  <main>
     <header>
-      <h1>heitor<span>.tech</span></h1>
+      <h1>
+        <a href="/" rel="home">heitor<span>.tech</span></a>
+      </h1>
     </header>
     <Nuxt />
     <footer>
@@ -9,7 +11,7 @@
         <a href="https://twitter.com/heitorstael" target="_blank">
           <fa-icon :icon="['fab', 'twitter']" size="lg" />
         </a>
-        <a href="https://instagram.com/heitorstael" target="_blank">
+        <a href="https://instagram.com/heitorstael/" target="_blank">
           <fa-icon :icon="['fab', 'instagram']" size="lg" />
         </a>
         <a href="https://github.com/heitorstael" target="_blank">
@@ -19,11 +21,12 @@
           <fa-icon :icon="['fab', 'linkedin-in']" size="lg" />
         </a>
       </address>
-      <p>
-        &#169; {{ new Date().getFullYear() }} Heitor Stael. Built using NuxtJS.
-      </p>
+      <small
+        >&copy; {{ new Date().getFullYear() }} Heitor Stael. Built using
+        NuxtJS.</small
+      >
     </footer>
-  </section>
+  </main>
 </template>
 
 <style lang="scss" scoped>
@@ -31,20 +34,18 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 100vw;
-    height: 100vh;
   }
 
   header {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    height: 12%;
+    height: 12vh;
     width: 90%;
     margin: 0 auto;
 
     h1 {
-      font: 1.8em 'Alata Regular';
+      font: 1.8em "Alata Regular";
       color: black;
 
       span {
@@ -57,7 +58,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    height: 12%;
+    height: 12vh;
     width: 90%;
     margin: 0 auto;
 
@@ -67,14 +68,14 @@
       width: 11%;
 
       a {
-        font-size: 1.2em;
+        font-size: 1.2vw;
         color: #747373;
       }
     }
 
-    p {
+    small {
       margin: 0.3em 0;
-      font: 0.9em 'FiraSans Regular';
+      font: 1vw "FiraSans Regular";
     }
   }
 </style>
