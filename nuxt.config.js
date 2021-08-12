@@ -1,40 +1,40 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'heitor.tech',
+    title: "heitor.tech",
     htmlAttrs: {
-      lang: 'en',
+      lang: "en",
     },
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { charset: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
-        hid: 'description',
-        name: 'description',
-        content: 'My personal website.',
+        hid: "description",
+        name: "description",
+        content: "My personal website.",
       },
-      { name: 'format-detection', content: 'telephone=no' },
-      { name: 'author', content: 'Heitor Stael' },
+      { name: "format-detection", content: "telephone=no" },
+      { name: "author", content: "Heitor Stael" },
       {
-        name: 'keywords',
+        name: "keywords",
         content:
-          'HTML, CSS, JavaScript, Web Development, Developer, Landing Page, NuxtJS, VueJS, Vue, Heitor, Stael, Full Stack, heitor tech',
+          "HTML, CSS, JavaScript, Web Development, Developer, Landing Page, NuxtJS, VueJS, Vue, Heitor, Stael, Full Stack, heitor tech",
       },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    '@/assets/css/resets/normalize.css',
-    '@/assets/css/resets/reset.css',
-    '@/assets/css/resets/typography.css',
-    '@/assets/css/fonts.scss',
-    '@fortawesome/fontawesome-svg-core/styles.css',
+    "@/assets/css/resets/normalize.css",
+    "@/assets/css/resets/reset.css",
+    "@/assets/css/resets/typography.css",
+    "@/assets/css/fonts.scss",
+    "@fortawesome/fontawesome-svg-core/styles.css",
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ['~/plugins/fontawesome.js'],
+  plugins: ["~/plugins/fontawesome.js"],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: false,
@@ -42,27 +42,23 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/eslint
-    '@nuxtjs/eslint-module',
+    "@nuxtjs/eslint-module",
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios',
+    "@nuxtjs/axios",
   ],
 
   // router config
   router: {
-    middleware: 'mobile',
+    middleware: "mobile",
   },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-    babel: {
-      plugins: [['@babel/plugin-proposal-private-methods', { loose: true }]],
-    },
-  },
+  build: {},
 };
