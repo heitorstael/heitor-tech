@@ -4,6 +4,7 @@
       <h1>
         <a href="/" rel="home">heitor<span>.tech</span></a>
       </h1>
+      <stairs-menu :is-mobile="false" />
     </header>
     <Nuxt />
     <footer>
@@ -28,6 +29,13 @@
     </footer>
   </main>
 </template>
+
+<script>
+  import StairsMenu from "~/components/StairsMenu";
+  export default {
+    components: { StairsMenu },
+  };
+</script>
 
 <style lang="scss" scoped>
   section {
