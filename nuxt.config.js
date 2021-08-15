@@ -11,7 +11,8 @@ export default {
       {
         hid: "description",
         name: "description",
-        content: "My personal website.",
+        content:
+          "My personal website that contains information about me, my résumé and my projects portfolio.",
       },
       { name: "format-detection", content: "telephone=no" },
       { name: "author", content: "Heitor Stael" },
@@ -20,6 +21,16 @@ export default {
         content:
           "HTML, CSS, JavaScript, Web Development, Developer, Landing Page, NuxtJS, VueJS, Vue, Heitor, Stael, Full Stack, heitor tech",
       },
+      { name: "robots", content: "index, follow" },
+      { name: "og:title", content: "heitor.tech" },
+      {
+        name: "og:description",
+        content:
+          "My personal website that contains information about me, my résumé and my projects portfolio.",
+      },
+      { name: "og:type", content: "website" },
+      { name: "og:image", content: "https://heitor.tech/img/og_default.png" },
+      { name: "og:url", content: "https://heitor.tech" },
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
   },
