@@ -22,6 +22,7 @@ export default {
           "HTML, CSS, JavaScript, Web Development, Developer, Landing Page, NuxtJS, VueJS, Vue, Heitor, Stael, Full Stack, heitor tech",
       },
       { name: "robots", content: "index, follow" },
+      { name: "theme-color", content: "#246eff" },
       { name: "og:title", content: "heitor.tech" },
       {
         name: "og:description",
@@ -54,7 +55,12 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     "@nuxtjs/eslint-module",
+    "@nuxtjs/device",
   ],
+  device: {
+    defaultUserAgent:
+      "Mozilla/5.0 (Linux; Android 5.1.1; Nexus 6 Build/LYZ28E) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.39 Mobile Safari/537.36",
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
@@ -63,9 +69,7 @@ export default {
   ],
 
   // router config
-  router: {
-    middleware: "mobile",
-  },
+  router: {},
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},

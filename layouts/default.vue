@@ -4,7 +4,7 @@
       <h1>
         <a href="/" rel="home">heitor<span>.tech</span></a>
       </h1>
-      <stairs-menu :is-mobile="false" />
+      <stairs-menu />
     </header>
     <Nuxt />
     <footer>
@@ -22,10 +22,9 @@
           <fa-icon :icon="['fab', 'linkedin-in']" size="lg" />
         </a>
       </address>
-      <small
-        >&copy; {{ new Date().getFullYear() }} Heitor Stael. Built using
-        NuxtJS.</small
-      >
+      <small>
+        &copy; {{ new Date().getFullYear() }} Heitor Stael. Built with NuxtJS.
+      </small>
     </footer>
   </main>
 </template>
@@ -74,16 +73,18 @@
       display: flex;
       justify-content: space-between;
       width: 11%;
+      min-width: 80px;
 
       a {
-        font-size: 1.2vw;
+        font-size: max(1.2vw, 12px);
         color: #747373;
       }
     }
 
     small {
       margin: 0.3em 0;
-      font: 1vw "FiraSans Regular";
+      font-family: "FiraSans Regular";
+      font-size: max(1vw, 10px);
     }
   }
 </style>

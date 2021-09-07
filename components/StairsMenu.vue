@@ -6,8 +6,11 @@
         <span class="stairs" />
       </div>
     </label>
-    <nav :class="['menu-options', { fullWidth: isMobile }]">
-      <ul v-show="isMenuOpened" class="options">
+    <nav :class="['menu-options', { 'full-width': isMobile }]">
+      <ul
+        v-show="isMenuOpened"
+        :class="['options', { 'font-mobile': isMobile }]"
+      >
         <li><a href="/">Home</a></li>
         <li><a href="/">Portfolio</a></li>
         <li><a href="/">Résumé</a></li>
@@ -133,7 +136,12 @@
       align-items: flex-end;
       justify-content: space-evenly;
 
-      font: 2vw "FiraSans Bold";
+      font-family: "FiraSans Bold";
+      font-size: max(2vw, 16px);
+
+      &.font-mobile {
+        font-size: 30px;
+      }
 
       li:hover {
         text-decoration: underline;
@@ -146,7 +154,7 @@
     width: 22vw;
     box-shadow: -1px 0px 9px 0px rgba(0, 0, 0, 0.75);
 
-    &.fullWidth {
+    &.full-width {
       width: 100vw;
     }
   }
