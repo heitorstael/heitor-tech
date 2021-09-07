@@ -2,7 +2,7 @@
   <section id="landing-page">
     <div :class="['greetings', { mobile: $device.isMobileOrTablet }]">
       <img
-        v-if="$device.isMobileOrTablet"
+        v-if="$device.isMobileOrTablet && isPortrait"
         src="/img/circle.png"
         alt="Circles"
         class="circles-img"
@@ -22,7 +22,7 @@
         <button type="button">Contact me</button>
       </a>
       <img
-        v-if="$device.isMobileOrTablet"
+        v-if="$device.isMobileOrTablet && isPortrait"
         src="/img/rectangle.png"
         alt="Rectangles"
         class="rectangles-img"
@@ -43,6 +43,21 @@
       ProgrammerIllustration,
     },
     layout: (ctx) => (ctx.$device.isMobileOrTablet ? "mobile" : "default"),
+
+    data() {
+      return {
+        isPortrait: true,
+      };
+    },
+
+    mounted() {
+      if (process.browser) {
+        this.isPortrait = window.orientation === 0;
+        window.addEventListener("orientationchange", (_) =>
+          document.location.reload()
+        );
+      }
+    },
   };
 </script>
 
