@@ -33,7 +33,7 @@
     "fibers": "^5.0.0",
     "husky": ">=7",
     "lint-staged": ">=11",
-    "prettier": "^2.4.1",
+    "prettier": "^2.5.0",
     "sass": "^1.43.4",
     "sass-loader": "^10"
   },
